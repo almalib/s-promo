@@ -22,7 +22,7 @@ export class CntFlexyViewAdamPromoHello implements ComponentInterface {
                 Привет_
               </h2>
               <p class="section-description">{this.deployed}</p>
-              <a href="" class="section-btn site-btn">
+              <a href="https://yadi.sk/i/HEsm3mU63t59xw" class="section-btn site-btn">
                 <i class="fas fa-download"></i>Скачать резюме
               </a>
             </div>

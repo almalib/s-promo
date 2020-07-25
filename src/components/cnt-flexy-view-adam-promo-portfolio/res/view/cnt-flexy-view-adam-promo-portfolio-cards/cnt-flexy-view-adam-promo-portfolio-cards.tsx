@@ -44,7 +44,7 @@ export class CntFlexyViewAdamPromoPortfolioCards implements ComponentInterface {
             href={this.portfolioCardsItems.link}
             class="project-card-link"
           >
-            {this.portfolioCardsItems.link}
+            ссылка
           </a>
         </div>
       </div>

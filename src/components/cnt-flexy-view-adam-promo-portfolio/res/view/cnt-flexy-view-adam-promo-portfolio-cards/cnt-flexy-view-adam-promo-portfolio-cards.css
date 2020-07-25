@@ -1,6 +1,6 @@
 .portfolio-card-img {
   width: 100%;
-  height: 392px;
+  height: 100%;
   background-position: center;
   background-size: cover;
 }
@@ -74,4 +74,10 @@ ul {
   padding: 0;
   list-style: none;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-card-img {
+    height: 375px;
+  }
 }

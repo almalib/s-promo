@@ -69,7 +69,7 @@ dt {
 }
 
 dd {
-  padding-left: 100px;
+  padding-left: 80px;
   margin-bottom: 15px;
 }
 a {
@@ -93,4 +93,11 @@ a:hover {
   margin-right: 15px;
   opacity: .4;
   color: #fff!important;
+}
+
+
+@media screen and (max-width: 990px) {
+    .personal-profile-avatar-wrapper {
+    display: none;
+  }
 }

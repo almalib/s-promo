@@ -15,7 +15,7 @@ export class CntFlexyViewAdamPromoIntro implements ComponentInterface {
       <header class="main-header" style={{backgroundImage: 'url('+this.deployed.img+')'}} >
         <div class="container">
           <div class="row personal-profile">
-            <div class="col-md-4">
+            <div class="col-md-4 personal-profile-avatar-wrapper">
               <div class="personal-profile-avatar" style={{backgroundImage: 'url('+this.deployed.img+')'}}>
               </div>
             </div>

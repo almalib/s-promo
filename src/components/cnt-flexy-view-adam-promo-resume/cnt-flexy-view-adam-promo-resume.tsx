@@ -56,7 +56,7 @@ export class CntFlexyViewAdamPromoResume implements ComponentInterface {
               <EmploymentBlock array={this.employmentBlock}></EmploymentBlock>
             </div>
           </div>
-          <div class="row section-resume progress-list js-progress-list">
+          <div class="row section-resume progress-list">
             <div class="col-md-12">
               <h3 class="progress-list-title">мои навыки</h3>
             </div>

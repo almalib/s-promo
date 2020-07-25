@@ -5,7 +5,7 @@ import {PromoMenuItemsInterface} from "../../interface/common.interface";
   tag: 'cnt-flexy-view-adam-promo-header-menu',
   styleUrl: 'cnt-flexy-view-adam-promo-header-menu.css',
   shadow: false,
-  scoped: false
+  scoped: true
 })
 export class CntFlexyViewAdamPromoHeaderMenu implements ComponentInterface {
 @Prop() menuItems: PromoMenuItemsInterface;
