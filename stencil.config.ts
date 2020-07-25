@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'stencil-portfolio',
+  globalStyle: 'src/global/global.css',
   taskQueue: 'async',
   outputTargets: [
     {

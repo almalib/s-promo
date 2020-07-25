@@ -5,23 +5,187 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { PromoEducationBlockInterface, PromoEploymentBlockInterface, SkillsBlockInterface, } from "./components/cnt-flexy-view-adam-promo-resume/res/interface/common.interface";
+import { PromoFooterBlockInterface, } from "./components/cnt-flexy-view-adam-promo-footer/res/interface/common.interface";
+import { PromoMenuItemsInterface, } from "./components/cnt-flexy-view-adam-promo-header/res/interface/common.interface";
+import { PromoIntroBlockInterface, } from "./components/cnt-flexy-view-adam-promo-intro/res/interface/common.interface";
+import { PromoPortfolioBlockMenuItemsInterface, PromoPortfolioCardsItemsInterface, } from "./components/cnt-flexy-view-adam-promo-portfolio/res/interface/common.interface";
 export namespace Components {
+    interface CntFlexyViewAdamPromoEducation {
+        /**
+          * Данные для блока "образование"
+         */
+        "educationBlock": PromoEducationBlockInterface;
+    }
+    interface CntFlexyViewAdamPromoEmployment {
+        /**
+          * Данные для блока "Опыт работы"
+         */
+        "employmentBlock": PromoEploymentBlockInterface;
+    }
+    interface CntFlexyViewAdamPromoFooter1_01 {
+        /**
+          * Данные для футера
+         */
+        "categories": PromoFooterBlockInterface;
+    }
+    interface CntFlexyViewAdamPromoHeader1_01 {
+        /**
+          * Элементы меню
+         */
+        "categories": PromoMenuItemsInterface[];
+    }
+    interface CntFlexyViewAdamPromoHeaderMenu {
+        "menuItems": PromoMenuItemsInterface;
+    }
+    interface CntFlexyViewAdamPromoHello1_01 {
+        /**
+          * Описание блока Hello
+         */
+        "deployed": string;
+    }
+    interface CntFlexyViewAdamPromoIntro1_01 {
+        "deployed": PromoIntroBlockInterface;
+    }
+    interface CntFlexyViewAdamPromoPortfolio1_01 {
+        /**
+          * Меню портфолио
+         */
+        "portfolioBlockMenuItems": PromoPortfolioBlockMenuItemsInterface[];
+        /**
+          * Карточки портфолио
+         */
+        "portfolioCardsItems": PromoPortfolioCardsItemsInterface[];
+        /**
+          * Данные для компонента stack
+         */
+        "stackList": any;
+    }
+    interface CntFlexyViewAdamPromoPortfolioCards {
+        /**
+          * Карточки портфолио
+         */
+        "portfolioCardsItems": any;
+        /**
+          * Данные для компонента stack
+         */
+        "stackList": any;
+    }
+    interface CntFlexyViewAdamPromoPortfolioMenu {
+        "portfolioBlockMenuItems": PromoPortfolioBlockMenuItemsInterface;
+    }
+    interface CntFlexyViewAdamPromoPortfolioStack {
+        /**
+          * Данные для компонента stack
+         */
+        "stackList": any;
+    }
+    interface CntFlexyViewAdamPromoResume1_01 {
+        /**
+          * Текст с описанием блока
+         */
+        "deployed": any;
+        /**
+          * Данные для блока "образование"
+         */
+        "educationBlock": PromoEducationBlockInterface[];
+        /**
+          * Данные для блока "Опыт работы"
+         */
+        "employmentBlock": PromoEploymentBlockInterface[];
+        /**
+          * Данные для блока "Мои навыки"
+         */
+        "skillsBlock": SkillsBlockInterface[];
+    }
+    interface CntFlexyViewAdamPromoSkills {
+        /**
+          * Данные для блока "Мои навыки"
+         */
+        "skillsBlock": SkillsBlockInterface;
+    }
     interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
     }
 }
 declare global {
+    interface HTMLCntFlexyViewAdamPromoEducationElement extends Components.CntFlexyViewAdamPromoEducation, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoEducationElement: {
+        prototype: HTMLCntFlexyViewAdamPromoEducationElement;
+        new (): HTMLCntFlexyViewAdamPromoEducationElement;
+    };
+    interface HTMLCntFlexyViewAdamPromoEmploymentElement extends Components.CntFlexyViewAdamPromoEmployment, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoEmploymentElement: {
+        prototype: HTMLCntFlexyViewAdamPromoEmploymentElement;
+        new (): HTMLCntFlexyViewAdamPromoEmploymentElement;
+    };
+    interface HTMLCntFlexyViewAdamPromoFooter1_01Element extends Components.CntFlexyViewAdamPromoFooter1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoFooter1_01Element: {
+        prototype: HTMLCntFlexyViewAdamPromoFooter1_01Element;
+        new (): HTMLCntFlexyViewAdamPromoFooter1_01Element;
+    };
+    interface HTMLCntFlexyViewAdamPromoHeader1_01Element extends Components.CntFlexyViewAdamPromoHeader1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoHeader1_01Element: {
+        prototype: HTMLCntFlexyViewAdamPromoHeader1_01Element;
+        new (): HTMLCntFlexyViewAdamPromoHeader1_01Element;
+    };
+    interface HTMLCntFlexyViewAdamPromoHeaderMenuElement extends Components.CntFlexyViewAdamPromoHeaderMenu, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoHeaderMenuElement: {
+        prototype: HTMLCntFlexyViewAdamPromoHeaderMenuElement;
+        new (): HTMLCntFlexyViewAdamPromoHeaderMenuElement;
+    };
+    interface HTMLCntFlexyViewAdamPromoHello1_01Element extends Components.CntFlexyViewAdamPromoHello1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoHello1_01Element: {
+        prototype: HTMLCntFlexyViewAdamPromoHello1_01Element;
+        new (): HTMLCntFlexyViewAdamPromoHello1_01Element;
+    };
+    interface HTMLCntFlexyViewAdamPromoIntro1_01Element extends Components.CntFlexyViewAdamPromoIntro1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoIntro1_01Element: {
+        prototype: HTMLCntFlexyViewAdamPromoIntro1_01Element;
+        new (): HTMLCntFlexyViewAdamPromoIntro1_01Element;
+    };
+    interface HTMLCntFlexyViewAdamPromoPortfolio1_01Element extends Components.CntFlexyViewAdamPromoPortfolio1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoPortfolio1_01Element: {
+        prototype: HTMLCntFlexyViewAdamPromoPortfolio1_01Element;
+        new (): HTMLCntFlexyViewAdamPromoPortfolio1_01Element;
+    };
+    interface HTMLCntFlexyViewAdamPromoPortfolioCardsElement extends Components.CntFlexyViewAdamPromoPortfolioCards, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoPortfolioCardsElement: {
+        prototype: HTMLCntFlexyViewAdamPromoPortfolioCardsElement;
+        new (): HTMLCntFlexyViewAdamPromoPortfolioCardsElement;
+    };
+    interface HTMLCntFlexyViewAdamPromoPortfolioMenuElement extends Components.CntFlexyViewAdamPromoPortfolioMenu, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoPortfolioMenuElement: {
+        prototype: HTMLCntFlexyViewAdamPromoPortfolioMenuElement;
+        new (): HTMLCntFlexyViewAdamPromoPortfolioMenuElement;
+    };
+    interface HTMLCntFlexyViewAdamPromoPortfolioStackElement extends Components.CntFlexyViewAdamPromoPortfolioStack, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoPortfolioStackElement: {
+        prototype: HTMLCntFlexyViewAdamPromoPortfolioStackElement;
+        new (): HTMLCntFlexyViewAdamPromoPortfolioStackElement;
+    };
+    interface HTMLCntFlexyViewAdamPromoResume1_01Element extends Components.CntFlexyViewAdamPromoResume1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoResume1_01Element: {
+        prototype: HTMLCntFlexyViewAdamPromoResume1_01Element;
+        new (): HTMLCntFlexyViewAdamPromoResume1_01Element;
+    };
+    interface HTMLCntFlexyViewAdamPromoSkillsElement extends Components.CntFlexyViewAdamPromoSkills, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAdamPromoSkillsElement: {
+        prototype: HTMLCntFlexyViewAdamPromoSkillsElement;
+        new (): HTMLCntFlexyViewAdamPromoSkillsElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,25 +193,132 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "cnt-flexy-view-adam-promo-education": HTMLCntFlexyViewAdamPromoEducationElement;
+        "cnt-flexy-view-adam-promo-employment": HTMLCntFlexyViewAdamPromoEmploymentElement;
+        "cnt-flexy-view-adam-promo-footer-1_01": HTMLCntFlexyViewAdamPromoFooter1_01Element;
+        "cnt-flexy-view-adam-promo-header-1_01": HTMLCntFlexyViewAdamPromoHeader1_01Element;
+        "cnt-flexy-view-adam-promo-header-menu": HTMLCntFlexyViewAdamPromoHeaderMenuElement;
+        "cnt-flexy-view-adam-promo-hello-1_01": HTMLCntFlexyViewAdamPromoHello1_01Element;
+        "cnt-flexy-view-adam-promo-intro-1_01": HTMLCntFlexyViewAdamPromoIntro1_01Element;
+        "cnt-flexy-view-adam-promo-portfolio-1_01": HTMLCntFlexyViewAdamPromoPortfolio1_01Element;
+        "cnt-flexy-view-adam-promo-portfolio-cards": HTMLCntFlexyViewAdamPromoPortfolioCardsElement;
+        "cnt-flexy-view-adam-promo-portfolio-menu": HTMLCntFlexyViewAdamPromoPortfolioMenuElement;
+        "cnt-flexy-view-adam-promo-portfolio-stack": HTMLCntFlexyViewAdamPromoPortfolioStackElement;
+        "cnt-flexy-view-adam-promo-resume-1_01": HTMLCntFlexyViewAdamPromoResume1_01Element;
+        "cnt-flexy-view-adam-promo-skills": HTMLCntFlexyViewAdamPromoSkillsElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface CntFlexyViewAdamPromoEducation {
+        /**
+          * Данные для блока "образование"
+         */
+        "educationBlock"?: PromoEducationBlockInterface;
+    }
+    interface CntFlexyViewAdamPromoEmployment {
+        /**
+          * Данные для блока "Опыт работы"
+         */
+        "employmentBlock"?: PromoEploymentBlockInterface;
+    }
+    interface CntFlexyViewAdamPromoFooter1_01 {
+        /**
+          * Данные для футера
+         */
+        "categories"?: PromoFooterBlockInterface;
+    }
+    interface CntFlexyViewAdamPromoHeader1_01 {
+        /**
+          * Элементы меню
+         */
+        "categories"?: PromoMenuItemsInterface[];
+    }
+    interface CntFlexyViewAdamPromoHeaderMenu {
+        "menuItems"?: PromoMenuItemsInterface;
+    }
+    interface CntFlexyViewAdamPromoHello1_01 {
+        /**
+          * Описание блока Hello
+         */
+        "deployed"?: string;
+    }
+    interface CntFlexyViewAdamPromoIntro1_01 {
+        "deployed"?: PromoIntroBlockInterface;
+    }
+    interface CntFlexyViewAdamPromoPortfolio1_01 {
+        /**
+          * Меню портфолио
+         */
+        "portfolioBlockMenuItems"?: PromoPortfolioBlockMenuItemsInterface[];
+        /**
+          * Карточки портфолио
+         */
+        "portfolioCardsItems"?: PromoPortfolioCardsItemsInterface[];
+        /**
+          * Данные для компонента stack
+         */
+        "stackList"?: any;
+    }
+    interface CntFlexyViewAdamPromoPortfolioCards {
+        /**
+          * Карточки портфолио
+         */
+        "portfolioCardsItems"?: any;
+        /**
+          * Данные для компонента stack
+         */
+        "stackList"?: any;
+    }
+    interface CntFlexyViewAdamPromoPortfolioMenu {
+        "portfolioBlockMenuItems"?: PromoPortfolioBlockMenuItemsInterface;
+    }
+    interface CntFlexyViewAdamPromoPortfolioStack {
+        /**
+          * Данные для компонента stack
+         */
+        "stackList"?: any;
+    }
+    interface CntFlexyViewAdamPromoResume1_01 {
+        /**
+          * Текст с описанием блока
+         */
+        "deployed"?: any;
+        /**
+          * Данные для блока "образование"
+         */
+        "educationBlock"?: PromoEducationBlockInterface[];
+        /**
+          * Данные для блока "Опыт работы"
+         */
+        "employmentBlock"?: PromoEploymentBlockInterface[];
+        /**
+          * Данные для блока "Мои навыки"
+         */
+        "skillsBlock"?: SkillsBlockInterface[];
+    }
+    interface CntFlexyViewAdamPromoSkills {
+        /**
+          * Данные для блока "Мои навыки"
+         */
+        "skillsBlock"?: SkillsBlockInterface;
+    }
     interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
     }
     interface IntrinsicElements {
+        "cnt-flexy-view-adam-promo-education": CntFlexyViewAdamPromoEducation;
+        "cnt-flexy-view-adam-promo-employment": CntFlexyViewAdamPromoEmployment;
+        "cnt-flexy-view-adam-promo-footer-1_01": CntFlexyViewAdamPromoFooter1_01;
+        "cnt-flexy-view-adam-promo-header-1_01": CntFlexyViewAdamPromoHeader1_01;
+        "cnt-flexy-view-adam-promo-header-menu": CntFlexyViewAdamPromoHeaderMenu;
+        "cnt-flexy-view-adam-promo-hello-1_01": CntFlexyViewAdamPromoHello1_01;
+        "cnt-flexy-view-adam-promo-intro-1_01": CntFlexyViewAdamPromoIntro1_01;
+        "cnt-flexy-view-adam-promo-portfolio-1_01": CntFlexyViewAdamPromoPortfolio1_01;
+        "cnt-flexy-view-adam-promo-portfolio-cards": CntFlexyViewAdamPromoPortfolioCards;
+        "cnt-flexy-view-adam-promo-portfolio-menu": CntFlexyViewAdamPromoPortfolioMenu;
+        "cnt-flexy-view-adam-promo-portfolio-stack": CntFlexyViewAdamPromoPortfolioStack;
+        "cnt-flexy-view-adam-promo-resume-1_01": CntFlexyViewAdamPromoResume1_01;
+        "cnt-flexy-view-adam-promo-skills": CntFlexyViewAdamPromoSkills;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +326,19 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "cnt-flexy-view-adam-promo-education": LocalJSX.CntFlexyViewAdamPromoEducation & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoEducationElement>;
+            "cnt-flexy-view-adam-promo-employment": LocalJSX.CntFlexyViewAdamPromoEmployment & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoEmploymentElement>;
+            "cnt-flexy-view-adam-promo-footer-1_01": LocalJSX.CntFlexyViewAdamPromoFooter1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoFooter1_01Element>;
+            "cnt-flexy-view-adam-promo-header-1_01": LocalJSX.CntFlexyViewAdamPromoHeader1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoHeader1_01Element>;
+            "cnt-flexy-view-adam-promo-header-menu": LocalJSX.CntFlexyViewAdamPromoHeaderMenu & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoHeaderMenuElement>;
+            "cnt-flexy-view-adam-promo-hello-1_01": LocalJSX.CntFlexyViewAdamPromoHello1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoHello1_01Element>;
+            "cnt-flexy-view-adam-promo-intro-1_01": LocalJSX.CntFlexyViewAdamPromoIntro1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoIntro1_01Element>;
+            "cnt-flexy-view-adam-promo-portfolio-1_01": LocalJSX.CntFlexyViewAdamPromoPortfolio1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoPortfolio1_01Element>;
+            "cnt-flexy-view-adam-promo-portfolio-cards": LocalJSX.CntFlexyViewAdamPromoPortfolioCards & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoPortfolioCardsElement>;
+            "cnt-flexy-view-adam-promo-portfolio-menu": LocalJSX.CntFlexyViewAdamPromoPortfolioMenu & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoPortfolioMenuElement>;
+            "cnt-flexy-view-adam-promo-portfolio-stack": LocalJSX.CntFlexyViewAdamPromoPortfolioStack & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoPortfolioStackElement>;
+            "cnt-flexy-view-adam-promo-resume-1_01": LocalJSX.CntFlexyViewAdamPromoResume1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoResume1_01Element>;
+            "cnt-flexy-view-adam-promo-skills": LocalJSX.CntFlexyViewAdamPromoSkills & JSXBase.HTMLAttributes<HTMLCntFlexyViewAdamPromoSkillsElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

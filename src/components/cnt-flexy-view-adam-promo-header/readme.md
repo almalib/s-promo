@@ -1,4 +1,4 @@
-# my-component
+# cnt-flexy-view-adam-promo-header-1_01
 
 
 
@@ -7,15 +7,15 @@
 
 ## Dependencies
 
-### Depends on
+### Used by
 
-- [cnt-flexy-view-adam-promo-header-1_01](../cnt-flexy-view-adam-promo-header)
+ - [my-component](../my-component)
 
 ### Graph
 ```mermaid
 graph TD;
   my-component --> cnt-flexy-view-adam-promo-header-1_01
-  style my-component fill:#f9f,stroke:#333,stroke-width:4px
+  style cnt-flexy-view-adam-promo-header-1_01 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

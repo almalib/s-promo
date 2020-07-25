@@ -1,0 +1,38 @@
+li {
+  display: inline-block;
+}
+
+.portfolio-menu-link-active {
+  color: #6d56c1;
+  text-decoration: none;
+}
+
+a {
+  padding-right: 50px;
+  transition: all .3s;
+  position: relative;
+  cursor: pointer;
+  color: #999999;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  bottom: 0;
+  right: 42px;
+  opacity: 0;
+  transition: background .3s;
+  background: #6d56c1;
+}
+
+a:hover {
+  transition: all .15s;
+  color: #6d56c1;
+}
+
+a:hover:after {
+  opacity: 1;
+}
+

@@ -1,0 +1,33 @@
+li {
+  display: inline-block;
+}
+a {
+  transition: all .3s;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  padding-right: 50px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  bottom: 0;
+  right: 42px;
+  opacity: 0;
+  transition: background .3s;
+  background: #6d56c1;
+}
+
+a:hover {
+  opacity: .5;
+  transition: all .15s;
+}
+
+.menu-active a {
+  color: #555!important;
+  opacity: 1;
+}
