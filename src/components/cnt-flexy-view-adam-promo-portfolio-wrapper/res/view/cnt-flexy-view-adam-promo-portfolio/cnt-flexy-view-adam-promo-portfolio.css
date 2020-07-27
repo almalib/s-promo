@@ -1,0 +1,56 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.section-title {
+  width: 12ch;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: printed-text 0.85s steps(12);
+}
+
+@keyframes printed-text{
+  from {
+    width: 0%;
+  }
+}
+
+.cursor {
+  animation: flashin-cursor-portfolio .95s step-start infinite;
+}
+
+@keyframes flashin-cursor-portfolio {
+  0%{
+    color: #555555;
+  }
+  50%{
+    color: transparent;
+  }
+  100%{
+    color: #555555;
+  }
+}
+
+nav {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+

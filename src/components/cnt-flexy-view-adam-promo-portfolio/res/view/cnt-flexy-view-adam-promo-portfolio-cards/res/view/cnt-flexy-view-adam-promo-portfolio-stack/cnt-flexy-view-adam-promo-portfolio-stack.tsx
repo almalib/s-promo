@@ -11,7 +11,8 @@ export class CntFlexyViewAdamPromoPortfolioStack implements ComponentInterface {
    * Данные для компонента stack
    */
   @Prop() stackList: any;
+
   render() {
-    return <li>{this.stackList.technology}</li>;
+    return <li>{this.stackList}</li>;
   }
 }

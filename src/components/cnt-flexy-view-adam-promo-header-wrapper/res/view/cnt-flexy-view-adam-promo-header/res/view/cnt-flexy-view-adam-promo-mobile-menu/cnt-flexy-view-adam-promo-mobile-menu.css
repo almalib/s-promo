@@ -1,0 +1,14 @@
+
+li {
+  padding: 6px 0;
+  display: inline-block;
+}
+
+a {
+  transition: all .3s;
+  text-decoration: none;
+  color: #fff;
+  padding: 25px;
+  display: inline-block;
+}
+

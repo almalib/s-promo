@@ -1,0 +1,47 @@
+.menu-items {
+  display: inline-block;
+}
+a.menu-links {
+  transition: all .3s;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  padding-right: 50px;
+}
+
+a.menu-links:after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  bottom: 0;
+  right: 42px;
+  opacity: 0;
+  transition: background .3s;
+  background: #ffffff;
+}
+
+a.menu-links:hover:after {
+  opacity: 1;
+}
+
+a.menu-links:hover {
+  opacity: .5;
+  transition: all .15s;
+}
+
+.menu-active a.menu-links {
+  color: #555;
+  opacity: 1;
+}
+
+.menu-active a.menu-links:hover {
+  color: #6d56c1;
+  opacity: .5;
+}
+
+.menu-active a.menu-links:hover:after {
+  opacity: 1;
+  background-color: #6d56c1;
+}

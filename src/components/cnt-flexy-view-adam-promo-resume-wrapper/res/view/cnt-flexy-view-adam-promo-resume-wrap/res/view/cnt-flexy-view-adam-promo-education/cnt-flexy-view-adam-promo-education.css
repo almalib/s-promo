@@ -1,0 +1,14 @@
+.resume-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.resume-list-title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #999;
+  margin-bottom: 40px;
+}

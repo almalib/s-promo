@@ -10,7 +10,7 @@ export class CntFlexyViewAdamPromoPortfolioCards implements ComponentInterface {
   /**
    * Карточки портфолио
    */
-  @Prop() portfolioCardsItems: any;
+  @Prop() payload: any;
 
   render() {
     return (
@@ -21,18 +21,18 @@ export class CntFlexyViewAdamPromoPortfolioCards implements ComponentInterface {
           <div
             class="portfolio-card-img"
             style={{
-              backgroundImage: "url(" + this.portfolioCardsItems.img + ")",
+              backgroundImage: "url(" + this.payload.img + ")",
             }}
           ></div>
         </div>
         <div class="col-md-6 col-lg-7 project-card-info">
-          <h3 class="project-card-title">{this.portfolioCardsItems.title}</h3>
+          <h3 class="project-card-title">{this.payload.title}</h3>
           <p class="project-card-description">
-            {this.portfolioCardsItems.description}
+            {this.payload.description}
           </p>
           <p class="project-card-stack">Использованный стек:</p>
-          <StackList array={this.portfolioCardsItems.stackList}></StackList>
-          <a href={this.portfolioCardsItems.link} class="project-card-link">
+          <StackList array={this.payload.stackList}></StackList>
+          <a href={this.payload.link} class="project-card-link">
             ссылка
           </a>
         </div>

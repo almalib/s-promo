@@ -1,0 +1,43 @@
+h2 {
+  margin: 0;
+}
+
+.section-title {
+  width: 7ch;
+  overflow: hidden;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 42px;
+  white-space: nowrap;
+  font-weight: 500;
+  animation: printed-text 0.85s steps(7);
+}
+
+@keyframes printed-text{
+  from {
+    width: 0%;
+  }
+}
+
+.cursor {
+  animation: flashin-cursor-resume .95s step-start infinite;
+}
+
+@keyframes flashin-cursor-resume {
+  0%{
+    color: #555555;
+  }
+  50%{
+    color: transparent;
+  }
+  100%{
+    color: #555555;
+  }
+}
+
+.resume-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
