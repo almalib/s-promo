@@ -14,12 +14,16 @@ export class CntFlexyViewAdamPromoHeaderMenu implements ComponentInterface {
    */
   @Prop() menuItems: PromoMenuItemsInterface;
 
+  /**
+   *
+   */
+  public menuItemTag: HTMLElement;
+
   render() {
     return (
       <li class="menu-items">
-        <a class="menu-links" href={this.menuItems.id}>{this.menuItems.item}</a>
+        <a onClick={() => console.log(this.menuItemTag)} ref ={(el) => (this.menuItemTag = el)}class="menu-links anchor" href={this.menuItems.id}>{this.menuItems.item}</a>
       </li>
     );
   }
-
 }

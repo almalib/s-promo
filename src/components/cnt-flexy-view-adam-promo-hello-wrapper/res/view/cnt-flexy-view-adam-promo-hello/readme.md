@@ -16,13 +16,13 @@
 
 ### Used by
 
- - [my-component](../my-component)
+ - [cnt-flexy-view-adam-promo-hello-wrapper-1_01](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  my-component --> cnt-flexy-view-adam-promo-hello-1_01
-  style cnt-flexy-view-adam-promo-hello-1_01 fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-adam-promo-hello-wrapper-1_01 --> cnt-flexy-view-adam-promo-hello
+  style cnt-flexy-view-adam-promo-hello fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

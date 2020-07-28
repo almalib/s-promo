@@ -1,6 +1,7 @@
 .menu-items {
   display: inline-block;
 }
+
 a.menu-links {
   transition: all .3s;
   position: relative;
@@ -45,3 +46,4 @@ a.menu-links:hover {
   opacity: 1;
   background-color: #6d56c1;
 }
+

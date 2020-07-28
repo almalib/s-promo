@@ -1,5 +1,5 @@
 import {Component, ComponentInterface, h, Prop} from "@stencil/core";
-import {SkillsBlockInterface} from "./res/interface/common.interface";
+import {PromoResumeInterface} from "../../interface/iterface.common";
 
 @Component({
   tag: "cnt-flexy-view-adam-promo-skills-1_01",
@@ -11,7 +11,7 @@ export class CntFlexyViewAdamPromoSkills implements ComponentInterface {
   /**
    * Данные для блока "Мои навыки"
    */
-  @Prop() payload: SkillsBlockInterface[] = [];
+  @Prop() payload: PromoResumeInterface;
 
   render() {
     return (
@@ -19,7 +19,7 @@ export class CntFlexyViewAdamPromoSkills implements ComponentInterface {
         <div class="col-md-12">
           <h3 class="progress-list-title">мои навыки</h3>
         </div>
-        <SkillsBlock array={this.payload}></SkillsBlock>
+        <SkillsBlock array={this.payload.skillsBlock}></SkillsBlock>
       </div>
     );
   }

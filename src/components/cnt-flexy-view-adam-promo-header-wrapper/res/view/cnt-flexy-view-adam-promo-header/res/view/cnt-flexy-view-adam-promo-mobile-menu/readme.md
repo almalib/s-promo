@@ -23,12 +23,12 @@
 
 ### Used by
 
- - [cnt-flexy-view-adam-promo-header-1_01](../../..)
+ - [cnt-flexy-view-adam-promo-header](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-adam-promo-header-1_01 --> cnt-flexy-view-adam-promo-mobile-menu
+  cnt-flexy-view-adam-promo-header --> cnt-flexy-view-adam-promo-mobile-menu
   style cnt-flexy-view-adam-promo-mobile-menu fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

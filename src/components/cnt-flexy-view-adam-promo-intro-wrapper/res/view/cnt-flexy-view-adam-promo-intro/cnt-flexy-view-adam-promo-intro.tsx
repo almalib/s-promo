@@ -2,12 +2,15 @@ import { Component, ComponentInterface, h, Prop } from '@stencil/core';
 import {PromoIntroBlockInterface} from "./res/interface/common.interface";
 
 @Component({
-  tag: 'cnt-flexy-view-adam-promo-intro-1_01',
+  tag: 'cnt-flexy-view-adam-promo-intro',
   styleUrl: 'cnt-flexy-view-adam-promo-intro.css',
   shadow: false,
   scoped: true
 })
 export class CntFlexyViewAdamPromoIntro implements ComponentInterface {
+  /**
+   * Данные для блока интро
+   */
   @Prop() payload: PromoIntroBlockInterface;
 
   render() {

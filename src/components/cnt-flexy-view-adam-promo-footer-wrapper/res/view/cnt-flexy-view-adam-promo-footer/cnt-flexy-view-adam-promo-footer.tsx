@@ -2,7 +2,7 @@ import {Component, ComponentInterface, h, Prop} from "@stencil/core";
 import {PromoFooterBlockInterface} from "./res/interface/common.interface";
 
 @Component({
-  tag: "cnt-flexy-view-adam-promo-footer-1_01",
+  tag: "cnt-flexy-view-adam-promo-footer",
   styleUrl: "cnt-flexy-view-adam-promo-footer.css",
   shadow: false,
   scoped: true
@@ -45,13 +45,13 @@ export class CntFlexyViewAdamPromoFooter implements ComponentInterface {
               <div class="contacts-social">
                 <ul>
                   <li>
-                    <a href="">Facebook</a>
+                    <a href="https://www.facebook.com/fromzandak/">Facebook</a>
                   </li>
                   <li>
-                    <a href="">Instagram</a>
+                    <a href="https://www.instagram.com/free_side/">Instagram</a>
                   </li>
                   <li>
-                    <a href="">GitHub</a>
+                    <a href="https://github.com/almalib">GitHub</a>
                   </li>
                 </ul>
               </div>
@@ -91,7 +91,6 @@ export class CntFlexyViewAdamPromoFooter implements ComponentInterface {
                     ></textarea>
                     <span class="form-validation"></span>
                     <span class="form-invalid-icon">
-                      <i class="mdi mdi-close"></i>
                     </span>
                   </div>
                   <button

@@ -16,7 +16,7 @@
 
 ### Used by
 
- - [my-component](../my-component)
+ - [cnt-flexy-view-adam-promo-header-wrapper-1_01](../../..)
 
 ### Depends on
 
@@ -26,10 +26,10 @@
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-adam-promo-header-1_01 --> cnt-flexy-view-adam-promo-mobile-menu
-  cnt-flexy-view-adam-promo-header-1_01 --> cnt-flexy-view-adam-promo-header-menu
-  my-component --> cnt-flexy-view-adam-promo-header-1_01
-  style cnt-flexy-view-adam-promo-header-1_01 fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-adam-promo-header --> cnt-flexy-view-adam-promo-mobile-menu
+  cnt-flexy-view-adam-promo-header --> cnt-flexy-view-adam-promo-header-menu
+  cnt-flexy-view-adam-promo-header-wrapper-1_01 --> cnt-flexy-view-adam-promo-header
+  style cnt-flexy-view-adam-promo-header fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

@@ -1,5 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap-grid.min.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
   padding: 0;
@@ -9,5 +13,4 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
-
 

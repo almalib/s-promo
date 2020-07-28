@@ -38,7 +38,7 @@ export class CntFlexyViewAdamPromoPortfolio implements ComponentInterface {
                       <cnt-flexy-view-adam-promo-portfolio-menu
                         payload={item}
                         onClickOnPortfoliosCategory={(item) =>
-                          this.portfolioCardsFilter(item.detail)
+                          this.portfolioCardsFilter(item.detail.id)
                         }
                       ></cnt-flexy-view-adam-promo-portfolio-menu>
                     );

@@ -7,22 +7,22 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type                       | Default     |
-| --------- | --------- | ----------- | -------------------------- | ----------- |
-| `payload` | --        |             | `PromoIntroBlockInterface` | `undefined` |
+| Property  | Attribute | Description            | Type                       | Default     |
+| --------- | --------- | ---------------------- | -------------------------- | ----------- |
+| `payload` | --        | Данные для блока интро | `PromoIntroBlockInterface` | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [my-component](../my-component)
+ - [cnt-flexy-view-adam-promo-intro-wrapper-1_01](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  my-component --> cnt-flexy-view-adam-promo-intro-1_01
-  style cnt-flexy-view-adam-promo-intro-1_01 fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-adam-promo-intro-wrapper-1_01 --> cnt-flexy-view-adam-promo-intro
+  style cnt-flexy-view-adam-promo-intro fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

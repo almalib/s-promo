@@ -1,5 +1,5 @@
 import {Component, ComponentInterface, h, Prop} from '@stencil/core';
-import {PromoEducationBlockInterface} from "./res/interface/common.interface";
+import {PromoResumeInterface} from "../../interface/iterface.common";
 
 @Component({
   tag: "cnt-flexy-view-adam-promo-education-1_01",
@@ -11,14 +11,14 @@ export class CntFlexyViewAdamPromoEducation implements ComponentInterface {
   /**
    * Данные для блока "образование"
    */
-  @Prop() payload: PromoEducationBlockInterface[] = [];
+  @Prop() payload: PromoResumeInterface;
 
   render() {
     return (
       <div class="row">
         <div class="col-md-8 resume-list">
           <h3 class="resume-list-title">обрзаование</h3>
-          <EducationBlock array={this.payload}></EducationBlock>
+          <EducationBlock array={this.payload.educationBlock}></EducationBlock>
         </div>
       </div>
     );

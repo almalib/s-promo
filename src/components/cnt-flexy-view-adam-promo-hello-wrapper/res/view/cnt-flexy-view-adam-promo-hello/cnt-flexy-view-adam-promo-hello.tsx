@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, h, Prop } from "@stencil/core";
 
 @Component({
-  tag: "cnt-flexy-view-adam-promo-hello-1_01",
+  tag: "cnt-flexy-view-adam-promo-hello",
   styleUrl: "cnt-flexy-view-adam-promo-hello.css",
   shadow: false,
   scoped: true,

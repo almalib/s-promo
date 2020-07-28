@@ -1,0 +1,36 @@
+.resume-list-block {
+  border-left: 2px solid #6d56c1;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+
+.resume-list-block:before {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #6d56c1;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background-color: #fff;
+  left: 10px;
+}
+
+.resume-list-block-title {
+  text-transform: uppercase;
+  color: #6d56c1;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.resume-list-block-date {
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+  padding-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}

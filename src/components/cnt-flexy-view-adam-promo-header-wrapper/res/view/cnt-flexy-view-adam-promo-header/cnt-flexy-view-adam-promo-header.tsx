@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h, Prop } from "@stencil/core";
 import { PromoMenuItemsInterface } from "./res/interface/common.interface";
 
 @Component({
-  tag: "cnt-flexy-view-adam-promo-header-1_01",
+  tag: "cnt-flexy-view-adam-promo-header",
   styleUrl: "cnt-flexy-view-adam-promo-header.css",
   shadow: false,
   scoped: true,

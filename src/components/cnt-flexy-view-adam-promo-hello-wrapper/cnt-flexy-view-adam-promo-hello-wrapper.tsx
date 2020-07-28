@@ -1,17 +1,20 @@
-import { Component, ComponentInterface, Host, h } from '@stencil/core';
+import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 
 @Component({
-  tag: 'cnt-flexy-view-adam-promo-hello-wrapper',
+  tag: 'cnt-flexy-view-adam-promo-hello-wrapper-1_01',
   styleUrl: 'cnt-flexy-view-adam-promo-hello-wrapper.css',
-  shadow: true,
+  shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAdamPromoHelloWrapper implements ComponentInterface {
+  /**
+   * Описание блока Hello
+   */
+  @Prop() payload: string;
 
   render() {
     return (
-      <Host>
-        <slot></slot>
-      </Host>
+      <cnt-flexy-view-adam-promo-hello payload={this.payload}></cnt-flexy-view-adam-promo-hello>
     );
   }
 

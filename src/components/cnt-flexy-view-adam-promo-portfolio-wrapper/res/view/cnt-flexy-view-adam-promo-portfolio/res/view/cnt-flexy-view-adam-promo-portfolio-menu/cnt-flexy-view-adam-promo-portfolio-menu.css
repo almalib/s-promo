@@ -41,3 +41,10 @@ a:hover:after {
 a.active {
   color: #6d56c1;
 }
+
+@media screen and (max-width: 576px) {
+  a {
+    padding-right: 15px;
+  }
+}
+

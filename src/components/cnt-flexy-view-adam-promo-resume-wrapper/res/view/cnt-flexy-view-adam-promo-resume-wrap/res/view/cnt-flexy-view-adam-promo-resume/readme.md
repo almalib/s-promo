@@ -7,21 +7,21 @@
 
 ## Properties
 
-| Property  | Attribute | Description             | Type  | Default     |
-| --------- | --------- | ----------------------- | ----- | ----------- |
-| `payload` | `payload` | Текст с описанием блока | `any` | `undefined` |
+| Property  | Attribute | Description             | Type                   | Default     |
+| --------- | --------- | ----------------------- | ---------------------- | ----------- |
+| `payload` | --        | Текст с описанием блока | `PromoResumeInterface` | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [my-component](../my-component)
+ - [cnt-flexy-view-adam-promo-resume-wrap](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  my-component --> cnt-flexy-view-adam-promo-resume-1_01
+  cnt-flexy-view-adam-promo-resume-wrap --> cnt-flexy-view-adam-promo-resume-1_01
   style cnt-flexy-view-adam-promo-resume-1_01 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

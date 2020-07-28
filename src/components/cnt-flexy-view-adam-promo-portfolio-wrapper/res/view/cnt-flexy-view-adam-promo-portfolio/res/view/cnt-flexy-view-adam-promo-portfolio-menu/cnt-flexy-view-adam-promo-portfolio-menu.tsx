@@ -15,30 +15,30 @@ import {
   scoped: true,
 })
 export class CntFlexyViewAdamPromoPortfolioMenu implements ComponentInterface {
+  /**
+   * Данные для категорий
+   */
   @Prop() payload: any;
 
   /**
-   *
-   */
-  @State() lastClickedCategory;
-
-  /**
-   * Клик по категории
+   * Клик по категории евент
    */
   @Event() clickOnPortfoliosCategory: EventEmitter;
+
+  /**
+   * Последняя кликнутая категория
+   */
+  @State() lastClickedCategory: any;
 
   render() {
     return (
       <li
-        onClick={() =>
-          this.clickOnPortfoliosCategoryHandler(this.payload.id)
-        }
-
+        onClick={() => this.clickOnPortfoliosCategoryHandler(this.payload)}
       >
         <a
           class={{
-            active: this.payload.id === this.lastClickedCategory}}
-
+            active: this.payload.id === this.lastClickedCategory?.id
+          }}
         >
           {this.payload.item}
         </a>
@@ -47,6 +47,6 @@ export class CntFlexyViewAdamPromoPortfolioMenu implements ComponentInterface {
   }
 
   public clickOnPortfoliosCategoryHandler(id) {
-    this.clickOnPortfoliosCategory.emit(id);
+    this.clickOnPortfoliosCategory.emit(this.lastClickedCategory = id);
   }
 }
