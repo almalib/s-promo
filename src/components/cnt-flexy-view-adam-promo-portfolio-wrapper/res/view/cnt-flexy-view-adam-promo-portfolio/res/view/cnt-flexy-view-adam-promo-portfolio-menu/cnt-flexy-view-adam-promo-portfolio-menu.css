@@ -7,7 +7,7 @@ li {
   text-decoration: none;
 }
 
-a {
+span {
   padding-right: 50px;
   transition: all .3s;
   position: relative;
@@ -15,7 +15,7 @@ a {
   color: #999999;
 }
 
-a:after {
+span:after {
   content: "";
   position: absolute;
   width: 7px;
@@ -27,23 +27,21 @@ a:after {
   background: #6d56c1;
 }
 
-a:hover {
+span:hover {
   transition: all .15s;
   color: #6d56c1;
 }
 
-a:hover:after {
+span:hover:after {
   opacity: 1;
 }
 
-.not a {color: red}
-
-a.active {
+span.active {
   color: #6d56c1;
 }
 
 @media screen and (max-width: 576px) {
-  a {
+  span {
     padding-right: 15px;
   }
 }

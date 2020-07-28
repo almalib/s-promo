@@ -35,13 +35,13 @@ export class CntFlexyViewAdamPromoPortfolioMenu implements ComponentInterface {
       <li
         onClick={() => this.clickOnPortfoliosCategoryHandler(this.payload)}
       >
-        <a
+        <span
           class={{
             active: this.payload.id === this.lastClickedCategory?.id
           }}
         >
           {this.payload.item}
-        </a>
+        </span>
       </li>
     );
   }

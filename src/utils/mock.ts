@@ -137,7 +137,7 @@ export const portfolio = {
     },
     {
       img:
-        "https://cdn1.radikalno.ru/uploads/2020/7/28/52b52d11023a7a72cab31042bd228e26-full.png",
+        "https://i.ibb.co/5FDhML4/landing.png",
       title: "Лендинг на CMS Tilda Publishing",
       description: "Сайт-визитка для IT-пространства Кодология",
       link: "http://codologia95.tilda.ws/",
