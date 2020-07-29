@@ -7,16 +7,16 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type  | Default     |
-| --------- | --------- | ----------- | ----- | ----------- |
-| `payload` | `payload` |             | `any` | `undefined` |
+| Property  | Attribute | Description          | Type  | Default     |
+| --------- | --------- | -------------------- | ----- | ----------- |
+| `payload` | `payload` | Данные для категорий | `any` | `undefined` |
 
 
 ## Events
 
-| Event                       | Description       | Type               |
-| --------------------------- | ----------------- | ------------------ |
-| `clickOnPortfoliosCategory` | Клик по категории | `CustomEvent<any>` |
+| Event                       | Description             | Type               |
+| --------------------------- | ----------------------- | ------------------ |
+| `clickOnPortfoliosCategory` | Клик по категории евент | `CustomEvent<any>` |
 
 
 ## Dependencies

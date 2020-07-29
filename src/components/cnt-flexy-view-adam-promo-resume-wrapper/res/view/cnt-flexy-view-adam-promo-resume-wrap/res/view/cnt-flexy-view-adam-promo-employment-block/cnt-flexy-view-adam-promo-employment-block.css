@@ -4,6 +4,10 @@
   padding-bottom: 50px;
 }
 
+.resume-list cnt-flexy-view-adam-promo-employment-block:last-child div {
+  padding-bottom: 0;
+}
+
 .resume-list-block:before {
   width: 12px;
   height: 12px;

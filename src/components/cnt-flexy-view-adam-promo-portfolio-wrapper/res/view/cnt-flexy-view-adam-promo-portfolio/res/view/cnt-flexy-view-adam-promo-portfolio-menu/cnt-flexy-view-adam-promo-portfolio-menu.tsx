@@ -5,7 +5,6 @@ import {
   Event,
   h,
   Prop,
-  State,
 } from "@stencil/core";
 
 @Component({
@@ -28,17 +27,17 @@ export class CntFlexyViewAdamPromoPortfolioMenu implements ComponentInterface {
   /**
    * Последняя кликнутая категория
    */
-  @State() lastClickedCategory: any;
+  // @State() lastClickedCategory = "all";
 
   render() {
     return (
       <li
-        onClick={() => this.clickOnPortfoliosCategoryHandler(this.payload)}
+        onClick={() => this.clickOnPortfoliosCategoryHandler(this.payload.id)}
       >
         <span
-          class={{
-            active: this.payload.id === this.lastClickedCategory?.id
-          }}
+          // class={{
+          //   active: this.payload.id === this.lastClickedCategory
+          // }}
         >
           {this.payload.item}
         </span>
@@ -46,7 +45,9 @@ export class CntFlexyViewAdamPromoPortfolioMenu implements ComponentInterface {
     );
   }
 
+
   public clickOnPortfoliosCategoryHandler(id) {
-    this.clickOnPortfoliosCategory.emit(this.lastClickedCategory = id);
+    // this.lastClickedCategory = id;
+    this.clickOnPortfoliosCategory.emit(id);
   }
 }

@@ -4,7 +4,7 @@ import { Component, ComponentInterface, h, Prop } from "@stencil/core";
   tag: "cnt-flexy-view-adam-promo-employment-block",
   styleUrl: "cnt-flexy-view-adam-promo-employment-block.css",
   shadow: false,
-  scoped: true
+  scoped: false
 })
 export class CntFlexyViewAdamPromoEmploymentBlock
   implements ComponentInterface {

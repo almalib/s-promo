@@ -16,7 +16,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-adam-promo-education-1_01](../../../../../../../../../../../..)
+ - [cnt-flexy-view-adam-promo-education-1_01](../cnt-flexy-view-adam-promo-education)
 
 ### Graph
 ```mermaid
