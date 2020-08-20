@@ -25,6 +25,7 @@
 
 #contact {
   border-top: 60px solid transparent;
+  margin-top: -60px;
 }
 
 @media screen and (max-width: 760px) {
@@ -35,6 +36,7 @@
 
   #contact {
     border-top: 50px solid transparent;
+    margin-top: -50px;
   }
 }
 

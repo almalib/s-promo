@@ -61,6 +61,10 @@ export class CntFlexyViewAdamPromoPortfolio implements ComponentInterface {
     );
   }
 
+  /**
+   * Фильтрация по категориям
+   * @param id
+   */
   public portfolioCardsFilter(id) {
     return id !== "all"
       ? (this.portfolioCardsItemsState = this.payload.portfolioCardsItems.filter(
