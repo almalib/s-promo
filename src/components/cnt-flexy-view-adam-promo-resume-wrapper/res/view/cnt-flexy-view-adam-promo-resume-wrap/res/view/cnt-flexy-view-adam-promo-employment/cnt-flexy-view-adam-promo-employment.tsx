@@ -17,7 +17,7 @@ export class CntFlexyViewAdamPromoEmployment implements ComponentInterface {
     return (
       <div class="row">
         <div class="col-md-8 resume-list">
-          <h3 class="resume-list-title">обрзаование</h3>
+          <h3 class="resume-list-title">опыт работы</h3>
           <EmploymentBlock array={this.payload.employmentBlock}></EmploymentBlock>
         </div>
       </div>

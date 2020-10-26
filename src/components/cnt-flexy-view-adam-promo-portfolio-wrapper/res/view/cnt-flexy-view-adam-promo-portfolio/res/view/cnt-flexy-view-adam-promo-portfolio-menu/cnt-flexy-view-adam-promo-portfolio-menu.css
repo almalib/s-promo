@@ -44,5 +44,9 @@ span.active {
   span {
     padding-right: 15px;
   }
+
+  span:after {
+    display: none;
+  }
 }
 
