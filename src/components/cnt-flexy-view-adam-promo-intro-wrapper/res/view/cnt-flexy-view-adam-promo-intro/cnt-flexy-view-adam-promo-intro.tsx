@@ -51,10 +51,10 @@ export class CntFlexyViewAdamPromoIntro implements ComponentInterface {
                 </dl>
               </div>
               <p class="personal-profiles-social">
-                <a href="https://github.com/almalib/ng-promo">
+                <a href="https://github.com/almalib/ng-promo" target="_blank">
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.instagram.com/free_side/">
+                <a href="https://www.instagram.com/free_side/" target="_blank">
                   <i class="fab fa-instagram-square"></i>
                 </a>
               </p>

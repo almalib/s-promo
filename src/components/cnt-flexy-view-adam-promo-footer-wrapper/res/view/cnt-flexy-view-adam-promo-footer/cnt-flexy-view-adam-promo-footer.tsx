@@ -1,11 +1,11 @@
-import {Component, ComponentInterface, h, Prop} from "@stencil/core";
-import {PromoFooterBlockInterface} from "./res/interface/common.interface";
+import { Component, ComponentInterface, h, Prop } from "@stencil/core";
+import { PromoFooterBlockInterface } from "./res/interface/common.interface";
 
 @Component({
   tag: "cnt-flexy-view-adam-promo-footer",
   styleUrl: "cnt-flexy-view-adam-promo-footer.css",
   shadow: false,
-  scoped: true
+  scoped: true,
 })
 export class CntFlexyViewAdamPromoFooter implements ComponentInterface {
   /**
@@ -15,7 +15,10 @@ export class CntFlexyViewAdamPromoFooter implements ComponentInterface {
 
   render() {
     return (
-      <div class="background" style={{backgroundImage: 'url('+this.categories.img+')'}}>
+      <div
+        class="background"
+        style={{ backgroundImage: "url(" + this.categories.img + ")" }}
+      >
         <div id="contact" class="container section">
           <div class="row">
             <div class="col-md-12">
@@ -30,28 +33,38 @@ export class CntFlexyViewAdamPromoFooter implements ComponentInterface {
                 <dl class="contact-list">
                   <dt>Phone:</dt>
                   <dd>
-                    <a href={'tel:'+this.categories.phone+''}>{this.categories.phone}</a>
+                    <a href={"tel:" + this.categories.phone + ""}>
+                      {this.categories.phone}
+                    </a>
                   </dd>
                   <dt>Skype:</dt>
                   <dd>
-                    <a href={'skype:'+this.categories.skype+''}>{this.categories.skype}</a>
+                    <a href={"skype:" + this.categories.skype + ""}>
+                      {this.categories.skype}
+                    </a>
                   </dd>
                   <dt>Email:</dt>
                   <dd>
-                    <a href={'mailto:'+this.categories.mail+''}>{this.categories.mail}</a>
+                    <a href={"mailto:" + this.categories.mail + ""}>
+                      {this.categories.mail}
+                    </a>
                   </dd>
                 </dl>
               </div>
               <div class="contacts-social">
                 <ul>
                   <li>
-                    <a href="https://www.facebook.com/fromzandak/">Facebook</a>
+                    <a
+                      href="https://www.instagram.com/free_side/"
+                      target="_blank"
+                    >
+                      Instagram
+                    </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/free_side/">Instagram</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/almalib">GitHub</a>
+                    <a href="https://github.com/almalib" target="_blank">
+                      GitHub
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -90,8 +103,7 @@ export class CntFlexyViewAdamPromoFooter implements ComponentInterface {
                       placeholder="Ваше сообщение"
                     ></textarea>
                     <span class="form-validation"></span>
-                    <span class="form-invalid-icon">
-                    </span>
+                    <span class="form-invalid-icon"></span>
                   </div>
                   <button
                     class="site-btn site-btn-form"
